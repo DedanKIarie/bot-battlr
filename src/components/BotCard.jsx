@@ -1,14 +1,24 @@
 import React from 'react';
 
-function BotCard({ bot, onClick }) {
-  return (
-    <div onClick={() => onClick(bot)} style={{ border: '1px solid #ccc', padding: '1rem', margin: '1rem', cursor: 'pointer' }}>
-      <img src={bot.avatar_url} alt={bot.name} width="150" />
-      <h2>{bot.name}</h2>
-      <p><strong>Class:</strong> {bot.bot_class}</p>
-      <p><strong>Catchphrase:</strong> {bot.catchphrase}</p>
-    </div>
-  );
-}
+function BotCard({ bot, onClick, onDischarge }) {
+    const { avatar_url, name, bot_class, catchphrase } = bot;
+    return (
+      <div className="bot-card" onClick={onClick}>
+        <img src={avatar_url} alt={name} className="bot-image" />
+        <h3 className="bot-name">{name}</h3>
+        <p className="bot-class">{bot_class}</p>
+        <p className="bot-catchphrase"><em>{catchphrase}</em></p>
+        {onDischarge && (
+          <button className="discharge-button" onClick={(e) => {
+            e.stopPropagation();
+            onDischarge(bot);
+          }}>
+            ✖
+          </button>
+        )}
+      </div>
+    );
+  }
+  
 
 export default BotCard;

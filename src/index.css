@@ -1,68 +1,157 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+/* index.css */
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  text-align: center;
+  margin-top: 20px;
+  color: #4b0082;
 }
 
-button {
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.bot-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+  position: relative;
+}
+
+.bot-card:hover {
+  transform: scale(1.03);
+}
+
+.bot-card img {
+  width: 100%;
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  margin-bottom: 10px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.bot-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.bot-class {
+  background-color: #e0e0e0;
+  padding: 4px 8px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.bot-stats {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.discharge-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.discharge-button:hover {
+  background-color: darkred;
+}
+/* index.css */
+
+.bot-card {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  position: relative;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bot-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.bot-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.bot-class {
+  background-color: #e0e0e0;
+  padding: 4px 8px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.bot-catchphrase {
+  font-style: italic;
+}
+
+.discharge-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.discharge-button:hover {
+  background-color: darkred;
+}
+
+.army-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.army-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  /* Center the cards */
+  gap: 20px;  /* Add some space between cards */
+  margin-top: 20px;
+}
+
+.army-cards .bot-card {
+  flex: 1 1 200px;  /* Allow cards to resize based on screen */
+  max-width: 220px;  /* Prevent cards from becoming too large */
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
 }
