@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import BotCollection from './components/BotCollection';
+import YourBotArmy from './components/YourBotArmy';
 
 function App() {
   const [bots, setBots] = useState([]);
@@ -17,13 +18,15 @@ function App() {
     }
   };
 
+  const handleReleaseFromArmy = (bot) => {
+    setYourArmy(yourArmy.filter(b => b.id !== bot.id));
+  };
+
+
   return (
     <div>
+      <YourBotArmy army={yourArmy} onRelease={handleReleaseFromArmy} />
       <BotCollection bots={bots} onAddToArmy={handleAddToArmy} />
-      <h2>Your Bot Army</h2>
-      {yourArmy.map(bot => (
-        <div key={bot.id}>{bot.name}</div>
-      ))}
     </div>
   );
 }
