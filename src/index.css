@@ -13,14 +13,6 @@ h1 {
   color: #4b0082;
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 1rem;
-  gap: 1rem;
-}
-
 .bot-card {
   background-color: #fff;
   border-radius: 12px;
@@ -30,13 +22,15 @@ h1 {
   text-align: center;
   transition: transform 0.2s ease;
   position: relative;
+  cursor: pointer;
+  margin: 10px;
 }
 
 .bot-card:hover {
   transform: scale(1.03);
 }
 
-.bot-card img {
+.bot-image {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 10px;
@@ -45,6 +39,7 @@ h1 {
 .bot-name {
   font-size: 1.2rem;
   font-weight: bold;
+  margin: 5px 0;
 }
 
 .bot-class {
@@ -55,9 +50,24 @@ h1 {
   margin: 5px 0;
 }
 
+.bot-catchphrase {
+  font-style: italic;
+  margin: 10px 0;
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
+  white-space: normal; 
+  max-width: 100%;
+  display: inline-block;
+}
+
 .bot-stats {
+  display: flex;
+  justify-content: space-around;
   margin-top: 10px;
-  font-size: 0.9rem;
+}
+
+.bot-stats span {
+  padding: 4px;
 }
 
 .discharge-button {
@@ -76,82 +86,24 @@ h1 {
 .discharge-button:hover {
   background-color: darkred;
 }
-/* index.css */
-
-.bot-card {
-  border: 1px solid #ccc;
-  margin: 10px;
-  padding: 10px;
-  width: 200px;
-  text-align: center;
-  position: relative;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.bot-image {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.bot-name {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.bot-class {
-  background-color: #e0e0e0;
-  padding: 4px 8px;
-  border-radius: 5px;
-  display: inline-block;
-  margin: 5px 0;
-}
-
-.bot-catchphrase {
-  font-style: italic;
-}
-
-.discharge-button {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  background-color: red;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 25px;
-  height: 25px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.discharge-button:hover {
-  background-color: darkred;
-}
 
 .army-container {
   padding: 20px;
-  text-align: center;
+  background-color: #e6e6fa;
+  margin-bottom: 20px;
 }
 
 .army-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;  /* Center the cards */
-  gap: 20px;  /* Add some space between cards */
-  margin-top: 20px;
+  justify-content: center;
+  gap: 20px;
 }
 
-.army-cards .bot-card {
-  flex: 1 1 200px;  /* Allow cards to resize based on screen */
-  max-width: 220px;  /* Prevent cards from becoming too large */
-  margin-bottom: 20px;
-}
-
-h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #333;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
 }
