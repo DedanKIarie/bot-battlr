@@ -10,7 +10,7 @@ A React application for building your ultimate bot army by enlisting, releasing,
 - **Discharge** bots permanently with the red X button
 - **View detailed specs** of each bot
 - **Sort** bots by health, damage, or armor
-- **Filter** bots by class (Support, Medic, Assault, etc.)
+- **Filter** bots by class (Support, Medic)
 - **Unique class restriction** - Only one bot per class in your army
 
 ## Technologies Used 
