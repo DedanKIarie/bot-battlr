@@ -1,12 +1,62 @@
-# React + Vite
+# Bot Battlr 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application for building your ultimate bot army by enlisting, releasing, and discharging bots.
 
-Currently, two official plugins are available:
+## Features 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Browse** available bots in the collection
+- **Enlist** bots to your army by clicking them
+- **Release** bots from your army
+- **Discharge** bots permanently with the red X button
+- **View detailed specs** of each bot
+- **Sort** bots by health, damage, or armor
+- **Filter** bots by class (Support, Medic, Assault, etc.)
+- **Unique class restriction** - Only one bot per class in your army
 
-## Expanding the ESLint configuration
+## Technologies Used 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React (Vite)
+- JavaScript 
+- CSS
+- JSON Server
+- React Hooks (useState, useEffect)
+
+## Installation and Setup ⚙️
+
+### Prerequisites
+- Node.js 
+- npm 
+
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/DedanKIarie/bot-battlr
+   cd bot-battlr
+2. Install dependencies:
+    ```bash
+   git clone npm install
+3. Start the JSON Server:
+   ```bash
+   npx json-server --watch db.json --port 8001
+4. Start the deployment server:
+    ```bash
+    npm run dev
+
+
+## How to Use 🎮
+- Browse Bots:
+
+- View all available bots in the collection
+
+- Click on any bot to see its detailed specifications
+
+- Click "Enlist" to add a bot to your army
+
+- Only one bot per class allowed in your army
+
+- Click on an enlisted bot to release it
+
+- Click the red X button to permanently discharge a bot
+
+Use the sort buttons to organize bots by stats
+

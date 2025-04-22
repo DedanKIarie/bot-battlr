@@ -107,3 +107,42 @@ h1 {
   padding: 1rem;
   gap: 1rem;
 }
+
+/* Sort Bar Styles */
+.sort-bar {
+  background-color: #f8f9fa;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 5px;
+  max-width: 800px;
+}
+
+.sort-bar h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 20px;
+}
+
+.filter-options label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #e9ecef;
+  border-radius: 20px;
+  transition: background-color 0.2s;
+}
+
+.filter-options label:hover {
+  background-color: #dee2e6;
+}
+
+.filter-options input {
+  margin-right: 5px;
+}
